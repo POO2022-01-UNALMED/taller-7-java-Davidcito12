@@ -8,7 +8,7 @@ public class Libro extends Escrito{
 	
 	public Libro(String origen, String titulo, String autor, int paginas,
 			String co_autor, String editorial, String edicion, String interpretacion) {
-		super(origen, titulo, co_autor, paginas);
+		super(origen, titulo, autor, paginas);
 		this.co_autor = co_autor;
 		this.editorial = editorial;
 		this.edicion = edicion;
@@ -17,7 +17,7 @@ public class Libro extends Escrito{
 	
 	public String toString() {
 		return getOrigen() + "\n" + getTitulo() + "\n" + getAutor() + "\n" +
-			   getPaginas() + "\n" + co_autor +"\n" + editorial + "\n" + edicion;
+			   getPaginas() + "\n" + co_autor + "\n" + editorial + "\n" + edicion;
 	}
 	
 	@Override
