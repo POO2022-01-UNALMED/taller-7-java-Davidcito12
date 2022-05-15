@@ -15,13 +15,13 @@ public class Libro extends Escrito{
 		this.interpretacion = interpretacion;
 	}
 	
-	public String toString() {
+	public public String toString() {
 		return getOrigen() + "\n" + getTitulo() + "\n" + getAutor() + "\n" +
 			   getPaginas() + "\n" + co_autor +"\n" + editorial + "\n" + edicion;
 	}
 	
 	@Override
-	int palabrasTotales(int palabrasPagina) {
+	public int palabrasTotales(int palabrasPagina) {
 		return palabrasPagina * getPaginas()* 2;
 	}
 

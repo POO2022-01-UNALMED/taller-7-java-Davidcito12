@@ -10,11 +10,11 @@ public class Fabula extends Escrito{
 	private String ensenanza;
 	private String interpretacion;
 	@Override
-	int palabrasTotales(int palabrasPagina) {
+	public int palabrasTotales(int palabrasPagina) {
 		return palabrasPagina * getPaginas();
 	}
 	@Override
-	String interpretacion() {
+	public String interpretacion() {
 		return interpretacion;
 	}
 	@Override
